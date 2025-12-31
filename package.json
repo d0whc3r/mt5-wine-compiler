@@ -1,0 +1,28 @@
+{
+  "name": "mt5-wine-compiler",
+  "version": "1.0.0",
+  "description": "Docker image to compile MT5 .mq5 files using Wine",
+  "author": "d0whc3r",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d0whc3r/mt5-wine-compiler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/d0whc3r/mt5-wine-compiler/issues"
+  },
+  "homepage": "https://github.com/d0whc3r/mt5-wine-compiler#readme",
+  "scripts": {
+    "test": "docker build -t mt5-compiler-test . && bats --show-output-of-passing-tests tests/test.bats"
+  },
+  "keywords": [
+    "mt5",
+    "mql5",
+    "compiler",
+    "wine",
+    "docker"
+  ],
+  "devDependencies": {
+    "bats": "1.13.0"
+  }
+}
